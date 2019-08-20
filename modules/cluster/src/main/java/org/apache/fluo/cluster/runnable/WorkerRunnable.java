@@ -64,7 +64,7 @@ public class WorkerRunnable extends AbstractTwillRunnable {
       }
     } catch (Exception e) {
       System.err.println("Exception while starting FluoWorker: " + e.getMessage());
-      e.printStackTrace();
+      log.error("Exception while starting FluoWorker: {}", e.getMessage(), e);
       System.exit(-1);
     }
 
@@ -81,7 +81,7 @@ public class WorkerRunnable extends AbstractTwillRunnable {
         config.validate();
       } catch (Exception e) {
         System.err.println("Error - Invalid fluo.properties due to " + e.getMessage());
-        e.printStackTrace();
+        log.error("Error - Invalid fluo.properties due to {}", e.getMessage(), e);
         System.exit(-1);
       }
 

@@ -64,7 +64,7 @@ public class OracleRunnable extends AbstractTwillRunnable {
       }
     } catch (Exception e) {
       System.err.println("Exception while starting FluoOracle: " + e.getMessage());
-      e.printStackTrace();
+      log.error("Exception while starting FluoOracle: {}", e.getMessage(), e);
       System.exit(-1);
     }
 
