@@ -19,8 +19,6 @@ import com.beust.jcommander.Parameters;
 import org.apache.fluo.api.client.FluoFactory;
 import org.apache.fluo.api.config.FluoConfiguration;
 import org.apache.fluo.core.util.UtilWaitThread;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 @Parameters(commandNames = "worker", commandDescription = "Starts Fluo Worker process for <app>")
 public class FluoWorker extends AppCommand {

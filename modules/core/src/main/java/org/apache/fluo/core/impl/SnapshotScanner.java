@@ -21,7 +21,6 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map.Entry;
 import java.util.NoSuchElementException;
-import java.util.function.Consumer;
 
 import com.google.common.collect.ImmutableSet;
 import org.apache.accumulo.core.client.IteratorSetting;

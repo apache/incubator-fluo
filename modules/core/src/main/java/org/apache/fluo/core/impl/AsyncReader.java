@@ -29,7 +29,6 @@ import com.google.common.collect.Collections2;
 import org.apache.fluo.api.data.Bytes;
 import org.apache.fluo.api.data.Column;
 import org.apache.fluo.api.data.RowColumn;
-import org.apache.fluo.core.impl.TransactionImpl;
 
 public class AsyncReader {
   private BlockingQueue<AsyncGet> asyncGetsQueue;
